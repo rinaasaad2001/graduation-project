@@ -1,0 +1,75 @@
+:root {
+  --myblue: #033373;
+  --mylight: #16aaca;
+  --black: black;
+  --white: white;
+  --green: #09c290;
+  --padding: 10px;
+  --margin: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: var(--white);
+  height: 60px;
+  z-index: 20;
+  position: fixed;
+}
+
+.logo {
+  max-width: 100%;
+  height: 60px;
+}
+
+.nav-link {
+  color: var(--myblue);
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  /* border: 2px solid ; */
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 1px 1px 20px 0px var(--myblue);
+  background-color: var(--mylight);
+  color: var(--white);
+}
+.dropdown-menu .dropdown-item {
+  color: var(--myblue);
+  font-size: 20px;
+}
+
+.custom-btn {
+  background-color: var(--myblue);
+  border-color: var(--myblue);
+  color: var(--white);
+  margin-left: 10px;
+  border: none;
+  padding: 5px;
+  width: 85px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: var(--mylight);
+  border-color: var(--mylight);
+  color: var(--white);
+  box-shadow: 1px 1px 20px 0px var(--myblue);
+}
